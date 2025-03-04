@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= products.name %> Details</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <%- include("../partials/head.ejs")  %>
+</head>
+<body class="products_name">
+    <container class="products_container">
+    <img class="image" src="<%= products.image %>" alt="<%= products.name %>">
+    <h1 class="products_name"><%= products.name %></h1>
+    <div class="information">
+    <p><strong>Type:</strong> <%= products.type %></p>
+    <p><strong>Name:</strong> <%= products.name %></p>
+    <p><strong>Size:</strong> <%= products.size %></p>
+    <p><strong>Material:</strong> <%= products.material %></p>
+    <p><strong>Price:</strong> <%= products.price %>sek</p>
+    <p><strong>Brand:</strong> <%= products.brand %></p>
+    <p><strong>Description:</strong> <%= products.description %></p>
+    <p><strong>Availability:</strong> <%= products.availability %></p>
+</div>
+<a class="back_button" href="/">Home</a>
+</container>
+</body>
+</html>

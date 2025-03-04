@@ -1,0 +1,26 @@
+{
+  "name": "jsframeworks-2",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A website about some clothing and beauty products",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ankitasingh88/jsframeworks-2.git"
+  },
+  "author": "Ankita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ankitasingh88/jsframeworks-2/issues"
+  },
+  "homepage": "https://github.com/Ankitasingh88/jsframeworks-2#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}

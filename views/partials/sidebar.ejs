@@ -1,0 +1,12 @@
+<div class="sidebar">
+    <h2>Products Names</h2>
+    <ul>
+        <% products.forEach(products=> { %>
+            <li>
+                <a class="products" href="/products/<%= products.name %>">
+                    <%= products.name %>
+                </a>
+            </li>
+        <% }); %>
+    </ul>
+</div>

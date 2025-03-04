@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    background-image: url("/images/pattern2.jpg");
+    
+    background-size: 100% 100%; 
+}
+
+body.home div.container{
+    background-image: url("/images/homeImage.webp");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+body.women div.container {
+    background-image: url("/images/womenImages.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.men div.container {
+    background-image: url("/images/newmenImage.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.kids div.container {
+    background-image: url("/images/kidsImage2.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.beauty div.container{
+    background-image: url("/images/beautyImages2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0%;
+    width: auto;
+    height: 100%;
+    mix-blend-mode: color-burn;
+}
+
+.heading {
+    margin-left: 0;
+}
+
+.title {
+    margin: 16px;
+    padding: 16px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 8px;
+    padding: 24px;
+}
+
+.nav_menu a {
+    margin: 0%;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+}
+
+.nav_menu a.active {
+    padding: 10px;
+    background-color: black;
+    color: wheat;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.active:hover {
+    background-color: #4F5165;
+    color: whitesmoke;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    height: 1000px;
+}
+
+.sidebar {
+    flex: 0 0 25%;
+    color: black;
+}
+
+.main_content {
+    flex: 0 0 75%;
+    color: black;
+}
+
+h2 {
+    text-align: left;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    margin: 5px;
+    width: auto;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.sidebar ul li:hover {
+    background-color: #49111c;
+}
+
+.products {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.content {
+    margin: 8px;
+}
+
+.content h3 {
+    font-size: 1.2rem;
+    text-decoration: solid;
+}
+
+.details {
+    text-indent: 30px;
+    font-size: 16px;
+}
+
+/*products.ejs css*/
+.products_body {
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/homeImage.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.image {
+    height: auto;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.products_name {
+    color: black;
+    margin: 3px;
+}
+
+p {
+    color: #49111c;
+    font-size: 1.2rem;
+    margin: 10px;
+    text-decoration: solid;
+}
+
+.products_container {
+    background-color: darkgray;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 16px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    width: 85%;
+}
+
+.back_button {
+    background-color: #4F5165;
+    font-size: 1.2rem;
+    color: beige;
+    border-radius: 16px;
+    padding: 16px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.back_button:hover {
+    background-color: grey;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "logo contact social"
+        "copyright copyright copyright";
+    padding: 24px;
+    gap: 36px;
+    align-items: center;
+    text-align: center; 
+    color: black;  
+}
+
+.footer_social-media a {
+    text-decoration: none;
+}
+
+.footer-logo h4 {
+    font-size: 1.5rem;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+}
+
+.footer-logo h4:hover {
+    background-color: #4F5165;
+    color: wheat; 
+}
+
+.footer-contact h4 {
+    font-size: 1.5rem;
+}
+
+.footer-logo ul {
+    display:flex;
+    flex-direction: column;
+}
+
+.footer-logo ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer_social-media h4 {
+    font-size: 1.5rem;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: 90px;
+    mix-blend-mode: color-burn;
+}
+
+.footer-copyright {
+    grid-area: copyright;
+    padding: 10px;
+}
+
+.facts h4 {
+    font-size: 1.5rem;
+    padding: 0.5px;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+}
+
+.facts ul {
+    display:flex;
+    flex-direction: column;
+    padding-inline-start: 5px;
+}
+
+.facts ul a {
+    color: black;
+    font-size: 1rem;
+    font-style: normal; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    padding: 7px; 
+    text-decoration: none;
+}
+
+.facts ul a:hover {
+    background-color: #4F5165;
+    color: wheat;
+}
+
+@media screen and (max-width : 1000px) {       
+    body.home div.container,
+    body.women div.container,
+    body.men div.container,
+    body.kids div.container, 
+    body.beauty div.container
+    {
+        background-image: none;
+    }    
+    }
+
+@media screen and (max-width : 768px) {
+
+    .title {
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 1.6rem;
+    }
+
+    .nav_menu a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .main_content {
+       margin: 8px;
+    }
+
+}
+
+@media screen and (max-width:742px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar h2{
+        text-align: center;
+    }
+
+    .sidebar ul{
+        padding-inline-start: 0px;
+    }
+
+    .sidebar ul li {
+        text-align: center;
+    }
+
+    .products_body {
+        background-image: none;
+    }
+
+    .image {
+        height: auto;
+        width: 50%;
+    }
+  
+    .products {
+        font-size: 1.5rem;
+    }   
+    
+}
+
+@media screen and (max-width:568px) {
+    .nav_menu {
+        flex-direction:column;
+    }
+
+    .nav_menu a {
+        text-align: center;
+        font-size: 1.8rem;
+        color: black;
+    }
+
+    .nav_menu a.active {
+        padding: 10px;
+        background-color: black;
+        color: whitesmoke;
+        cursor: pointer;
+        border-radius: 16px;
+    }
+
+   .footer {
+        display:block;
+    }
+}
