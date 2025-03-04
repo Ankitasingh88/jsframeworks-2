@@ -4,9 +4,11 @@ import menRouter from "./routes/menRouter.js";
 import kidsRouter from "./routes/kidsRouter.js";
 import beautyRouter from "./routes/beautyRouter.js";
 import {allProducts,homeContent} from './data/products.js';
+import * as dotenv from "dotenv";
 import * as path from "path";
 
-const PORT = 3003;
+dotenv.config();
+const PORT = process.env.PORT;
 
 const app = express ();
 const __dirname = path.resolve();
